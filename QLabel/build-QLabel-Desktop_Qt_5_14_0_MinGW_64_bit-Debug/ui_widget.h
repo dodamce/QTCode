@@ -20,6 +20,9 @@ class Ui_Widget
 {
 public:
     QLabel *label;
+    QLabel *label_2;
+    QLabel *label_3;
+    QLabel *label_4;
 
     void setupUi(QWidget *Widget)
     {
@@ -28,7 +31,20 @@ public:
         Widget->resize(800, 600);
         label = new QLabel(Widget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(70, 90, 111, 41));
+        label->setGeometry(QRect(70, 30, 561, 121));
+        label->setFrameShape(QFrame::Box);
+        label_2 = new QLabel(Widget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(80, 170, 561, 121));
+        label_2->setFrameShape(QFrame::Box);
+        label_3 = new QLabel(Widget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(80, 320, 561, 121));
+        label_3->setFrameShape(QFrame::Box);
+        label_4 = new QLabel(Widget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(80, 460, 561, 121));
+        label_4->setFrameShape(QFrame::Box);
 
         retranslateUi(Widget);
 
@@ -39,6 +55,9 @@ public:
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
         label->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
+        label_2->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
+        label_3->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
+        label_4->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
     } // retranslateUi
 
 };
