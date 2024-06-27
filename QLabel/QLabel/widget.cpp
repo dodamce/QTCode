@@ -20,14 +20,17 @@ Widget::Widget(QWidget *parent)
 //    ui->label->setPixmap(pic);
 //    //启用自动拉伸使图片填充满整个label
 //    ui->label->setScaledContents(true);
-    ui->label->setText("这是第一段文本");
-    ui->label->setAlignment(Qt::AlignHCenter|Qt::AlignVCenter);//水平竖直居中
-    ui->label_2->setText("长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本");
-    ui->label_2->setWordWrap(true);//设置自动换行
-    ui->label_3->setText("设置缩进");
-    ui->label_3->setIndent(50);//缩进50像素，上左缩进
-    ui->label_4->setText("设置边距");
-    ui->label_4->setMargin(55);//设置边距（四个方向），文字被覆盖掉一部分
+//    ui->label->setText("这是第一段文本");
+//    ui->label->setAlignment(Qt::AlignHCenter|Qt::AlignVCenter);//水平竖直居中
+//    ui->label_2->setText("长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本");
+//    ui->label_2->setWordWrap(true);//设置自动换行
+//    ui->label_3->setText("设置缩进");
+//    ui->label_3->setIndent(50);//缩进50像素，上左缩进
+//    ui->label_4->setText("设置边距");
+//    ui->label_4->setMargin(55);//设置边距（四个方向），文字被覆盖掉一部分
+    //设置伙伴关系
+    ui->label->setBuddy(ui->radioButton);
+    ui->label_2->setBuddy(ui->radioButton_2);
 }
 
 Widget::~Widget()
