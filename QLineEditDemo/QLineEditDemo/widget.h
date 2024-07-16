@@ -18,6 +18,8 @@ public:
 private slots:
     void on_submet_clicked();
 
+    void on_phone_line_textEdited(const QString &arg1);
+
 private:
     Ui::Widget *ui;
 };
