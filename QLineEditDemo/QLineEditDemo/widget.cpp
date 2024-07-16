@@ -45,7 +45,5 @@ void Widget::on_phone_line_textEdited(const QString& text) {
     if (ui->phone_line->validator()->validate(str, pos) == QValidator::Acceptable) {
         //验证通过，提交按钮设置为可用状态
         ui->submet->setEnabled(true);
-    } else {
-        ui->submet->setEnabled(false);
     }
 }
